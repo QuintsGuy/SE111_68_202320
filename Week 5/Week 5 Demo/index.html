@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Tristan Knott">
+    <meta name="description" content="W5 Tables & Forms Demo">
+        
+    <title>W5 | Tables & Forms Demo</title>
+</head>
+<body>
+
+    <h1>Basic Form Demo</h1>
+
+    <h2>Form w/o Table</h2>
+
+    <!--text: text fields for manual entry by user - value becomes what user types-->
+    <form>
+
+        <!--first name-->
+        <label for="firstName">First Name: </label>
+        <input type="text" name="firstName" id="first-name-input">
+
+        <!--labels are used to match up with input elements
+
+            for attribute value connects label element with input element
+            name attribute value connects input element with label element-->
+
+        <!--last name-->
+        <label for="lastName">Last Name: </label>
+        <input type="text" name="lastName" id="last-name-input">
+
+        <!--email-->
+        <label for="email">Email: </label>
+        <input type="text" name="email" id="email-input">
+
+        <!--submit button - required for any form with >1 input field-->
+        <input type="submit" value="SUBMIT">
+
+        <h2>Form w/ Table</h2>
+        <!--using tables to align and space data for ease of use-->
+
+        <!--Form comes first-->
+        <form>
+            <table>
+                <tbody><!--required for all tables-->
+                    <!--tbody is populated row by row, top down-->
+                    <tr>
+                        <td>
+                            <label for="firstName">First Name: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="firstName" id="first-name-2-input">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="lastName">First Name: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="lastName" id="last-name-2-input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">First Name: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="email" id="email-name-2-input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="SUBMIT">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+
+
+    </form>
+    
+</body>
+</html>
