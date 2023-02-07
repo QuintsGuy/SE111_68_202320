@@ -77,6 +77,54 @@
                             <input type="submit" value="SUBMIT">
                         </td>
                     </tr>
+                     <!--NON-TEXT INPUT-->
+                    <tr>
+                        <td>
+                            <label for="faveColor">Pick your Favorite Color: </label>
+                        </td>
+                        <td>
+                            <!--drop-down selection options-->
+                            <select name="faveColor">
+                                <option value="red">RED</option>
+                                <option value="green">GREEN</option>
+                                <option value="blue">BLUE</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr><!--radio buttons - restricted to one options from name value group-->
+                        <td>
+                            <label for="study">Program of Study</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="study" value="SE">Software Engineering <br>
+                            <input type="radio" name="study" value="CYB">Cybersecurity <br>
+                            <input type="radio" name="study" value="WB">Web Development <br>
+                        </td>
+                    </tr>
+
+                    <tr><!--date & time create pop-out fields for user to interact with (or type into)-->
+                        <td>
+                            <label for="date">Date: </label>
+                        </td>
+                        <td>
+                            <input type="date" name="date">
+                        </td>
+                    </tr>
+
+                    <tr><!--checkboxes allow for multiple responses-->
+                        <td>
+                            <label for="vehicle">Select Your Vehicles: </label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="vehicle1" value="car">Car <br>
+                            <input type="checkbox" name="vehicle2" value="roci">Rocinante <br>
+                            <input type="checkbox" name="vehicle3" value="motorcycle">Motorcycle <br>
+                            <input type="checkbox" name="vehicle4" value="bike">Bicycle <br>
+                            <input type="checkbox" name="vehicle5" value="dragon">Dragon <br>
+                            <input type="chechbox" name="vehicle6" value="horse">Roach <br>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </form>
