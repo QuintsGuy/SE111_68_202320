@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+ 
+    <meta name="author" content="Tristan Knott">
+    <meta name="description" content="Week 6 Lab">
+    
+    <title>W6 Lab| Javascript Pay Calculator</title>
+
 </head>
 <body>
-    
+    <h1>Javascript Pay Calculator</h1>
+
+    <script>
+
+        var hourlyPay = Number(prompt(`Enter your hourly pay: `))
+        var hoursWorked = Number(prompt(`Enter how many hours you worked: `))
+        var grossPay = hourlyPay * hoursWorked
+        var taxRate = Number(0.2)
+        var uncleSam = (grossPay * taxRate).toFixed(2)
+        var netPay = (grossPay - uncleSam).toFixed(2)
+
+        console.log(`Gross Pay: ${grossPay}`)
+        console.log(`Uncle Sam's Share: ${uncleSam}`)
+        console.log(`Net Pay: ${netPay}`)
+        alert(`Your take home pay is: ${netPay}`)
+
+    </script>
 </body>
 </html>

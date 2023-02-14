@@ -6,11 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <meta name="author" content="Tristan Knott">
-    <meta name="description" content="Week 6 Demo - JS Intro"
+    <meta name="description" content="Week 6 Demo - JS Intro">
     <title>W6 | Intro to JS</title>
 </head>
 <body>
     <h1>Week 6 Intro Demo | Javascript</h1>
+
+    <script>
     
+    //everything inside script tags must be written in javascript
+    //creating a variable -- keyword "var"
+    var num1 = 10
+    var num2 = 7
+    
+    //cannot use num1 or num2 until they have values assigned (=)
+    //variable assignment also called definition
+
+    var sum = num1+num2
+    
+    //test our value in the console -- displaying variable values
+
+    console.log(num1, num2, sum) //use for testing
+    console.log(sum)
+
+    //alert() allows for a pop-up in the browser page to display information to the user
+    //alert() is the same as print() in python
+    alert(sum) //displays stored value
+    alert("The sum is: ", sum) //displays string then stores value
+    alert(`The sum is: ${sum}!`) //literal string
+
+    //escape sequences also work in Javascript \n (inside of strings!)
+    console.log(`The sum of \n${num1}\n+\n${num2}\n=${sum}`)
+    alert(`The sume is: \n${sum}!`)
+
+    //prompts user for value; waits for ENTER key
+    //prompt is the same as input() in python
+    var name = prompt(`Enter your name: `)
+
+    console.log(`Name entered: ${name}`)
+
+    //all data returned from prompt() is a string; must convert to Number() type if we want to do math
+
+    var num = Number(prompt(`Enter a number: `))
+    var square = Number(num) * Number(num)
+
+    console.log(square.toFixed(2))
+
+    </script>
 </body>
 </html>
