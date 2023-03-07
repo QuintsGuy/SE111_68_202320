@@ -99,7 +99,7 @@
 			var output = (``)
 
 			//Loop through the objects in the people array
-			for(let key in people)
+			for(let i = 0; i < people.length; i++)
 			{
 
 				//Loop through each property in the object
@@ -109,11 +109,11 @@
 					//Output will resemble:
 					//FIRST: Ivan
 					//LAST: Drago
-				
+					output += `<p><b>${key.toUpperCase()}</b>: ${people[i][key].toUpperCase()}<br></p>`
 
                 }
                 //add a <hr> to the output at the end of this outter loop so a horizontal rule is displayed inbetween each person being displayed to the screen.
-				
+				output += `<hr>`
 
 
 			}//end of loop going through people array to edit 'output'
@@ -121,6 +121,7 @@
 				//log the output string
 				console.log(`${output}`)
 				//replace the outputDiv's inner HTML with the output string
+				document.querySelector(`#output`).innerHTML = output
 				
 
 

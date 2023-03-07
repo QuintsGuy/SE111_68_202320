@@ -68,6 +68,12 @@
 
                 for(key in people[i])
                 {
+                    var h3 = document.createElement(`h3`)
+                    var name = document.createTextNode(key)
+                    
+                    h3.appendChild(name)
+                    tempDiv.appendChild(h3)
+
                     var p = document.createElement(`p`)
                     var text = document.createTextNode(people[i][key])
                     
