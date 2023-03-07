@@ -71,8 +71,8 @@
 				//2. last: will be a string that uses the last Input's value
 
             var person = {
-				first: fname,
-				last: lname,
+				first: document.querySelector(`#first`).value,
+				last: document.querySelector(`#last`).value
             }//end of person object
 
 			//Add the person object into the people array by using the .push() array method.
@@ -96,7 +96,7 @@
 			console.log(`${people}`)
 
 			//create a variable called 'output' that has an empty string value stored to 
-			var output = (``)
+			var output = ``
 
 			//Loop through the objects in the people array
 			for(let i = 0; i < people.length; i++)
